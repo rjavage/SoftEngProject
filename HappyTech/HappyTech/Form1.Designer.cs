@@ -51,6 +51,7 @@
             this.positionLabel.Size = new System.Drawing.Size(35, 13);
             this.positionLabel.TabIndex = 0;
             this.positionLabel.Text = "label1";
+            this.positionLabel.Click += new System.EventHandler(this.positionLabel_Click);
             // 
             // templatePositionTextBox
             // 

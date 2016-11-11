@@ -107,5 +107,10 @@ namespace HappyTech
                 sectionOneNameLabel.Text = addSectionNameTextbox.Text;
             }
         }
+
+        private void positionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
