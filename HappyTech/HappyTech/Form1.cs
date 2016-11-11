@@ -1,6 +1,6 @@
 ﻿// Author: Ryan Savage
 // SID: 1431802
-// Edited: 11/11/2016
+// Edited: 12/11/2016
 
 using System;
 using System.Collections.Generic;
@@ -16,25 +16,38 @@ namespace HappyTech
 {
     public partial class Form1 : Form
     {
-        //count variable to add textboxes
-        static int count = 1;
+
+        //count variable to keep track of textboxes
+        private int count = 1;
 
         public Form1()
         {
             InitializeComponent();
-
-            //default text for section labels,buttons
-            sectionOneNameLabel.Text = "Section One";
-            positionLabel.Text = "Position";
-            addSectionButton.Text = "Add Section";
-            addSectionNameLabel.Text = "Section Name:";
-            removeSectionButton.Text = "Remove Section";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //default text for labels,buttons on startup
+            sectionOneNameLabel.Text = "Section One";
+            positionLabel.Text = "Position";
+            addSectionButton.Text = "Add New Section";
+            addSectionNameLabel.Text = "Section Name:";
+            removeSectionButton.Text = "Remove Section";
+            addSectionNumberLabel.Text = "Section Number:";
+            removeSectionNumberLabel.Text = "Section Number:";
 
+
+
+            //add values to addSectionNumberComboBox
+            for (int i = 1; i < 100; i++)
+                addSectionNumberComboBox.Items.Add(i);
+
+            //add values to removeSectionNumberComboBox
+            for (int i = 1; i < 100; i++)
+                removeSectionNumberComboBox.Items.Add(i);
         }
+
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -61,7 +74,7 @@ namespace HappyTech
                 TextBox textbox6 = new TextBox();
 
 
-                //position of textboxes
+                //position of textboxes in panel
                 textbox1.Location = new Point(10, 25 * count);
                 textbox2.Location = new Point(160, 25 * count);
                 textbox3.Location = new Point(10, 70 * count);

@@ -33,9 +33,13 @@
             this.addSectionButton = new System.Windows.Forms.Button();
             this.removeSectionButton = new System.Windows.Forms.Button();
             this.section1 = new System.Windows.Forms.Panel();
-            this.addSectionNameTextbox = new System.Windows.Forms.TextBox();
-            this.addSectionNameLabel = new System.Windows.Forms.Label();
             this.sectionOneNameLabel = new System.Windows.Forms.Label();
+            this.addSectionNameTextbox = new System.Windows.Forms.TextBox();
+            this.addSectionNumberLabel = new System.Windows.Forms.Label();
+            this.addSectionNumberComboBox = new System.Windows.Forms.ComboBox();
+            this.addSectionNameLabel = new System.Windows.Forms.Label();
+            this.removeSectionNumberLabel = new System.Windows.Forms.Label();
+            this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
             this.section1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +71,7 @@
             // 
             // removeSectionButton
             // 
-            this.removeSectionButton.Location = new System.Drawing.Point(419, 49);
+            this.removeSectionButton.Location = new System.Drawing.Point(641, 49);
             this.removeSectionButton.Name = "removeSectionButton";
             this.removeSectionButton.Size = new System.Drawing.Size(75, 35);
             this.removeSectionButton.TabIndex = 3;
@@ -76,26 +80,10 @@
             // section1
             // 
             this.section1.Controls.Add(this.sectionOneNameLabel);
-            this.section1.Location = new System.Drawing.Point(16, 132);
+            this.section1.Location = new System.Drawing.Point(16, 175);
             this.section1.Name = "section1";
             this.section1.Size = new System.Drawing.Size(482, 164);
             this.section1.TabIndex = 4;
-            // 
-            // addSectionNameTextbox
-            // 
-            this.addSectionNameTextbox.Location = new System.Drawing.Point(100, 84);
-            this.addSectionNameTextbox.Name = "addSectionNameTextbox";
-            this.addSectionNameTextbox.Size = new System.Drawing.Size(100, 20);
-            this.addSectionNameTextbox.TabIndex = 5;
-            // 
-            // addSectionNameLabel
-            // 
-            this.addSectionNameLabel.AutoSize = true;
-            this.addSectionNameLabel.Location = new System.Drawing.Point(12, 87);
-            this.addSectionNameLabel.Name = "addSectionNameLabel";
-            this.addSectionNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.addSectionNameLabel.TabIndex = 6;
-            this.addSectionNameLabel.Text = "label2";
             // 
             // sectionOneNameLabel
             // 
@@ -106,12 +94,66 @@
             this.sectionOneNameLabel.TabIndex = 0;
             this.sectionOneNameLabel.Text = "label3";
             // 
+            // addSectionNameTextbox
+            // 
+            this.addSectionNameTextbox.Location = new System.Drawing.Point(96, 109);
+            this.addSectionNameTextbox.Name = "addSectionNameTextbox";
+            this.addSectionNameTextbox.Size = new System.Drawing.Size(100, 20);
+            this.addSectionNameTextbox.TabIndex = 5;
+            // 
+            // addSectionNumberLabel
+            // 
+            this.addSectionNumberLabel.AutoSize = true;
+            this.addSectionNumberLabel.Location = new System.Drawing.Point(12, 87);
+            this.addSectionNumberLabel.Name = "addSectionNumberLabel";
+            this.addSectionNumberLabel.Size = new System.Drawing.Size(35, 13);
+            this.addSectionNumberLabel.TabIndex = 6;
+            this.addSectionNumberLabel.Text = "label2";
+            // 
+            // addSectionNumberComboBox
+            // 
+            this.addSectionNumberComboBox.FormattingEnabled = true;
+            this.addSectionNumberComboBox.Location = new System.Drawing.Point(117, 82);
+            this.addSectionNumberComboBox.Name = "addSectionNumberComboBox";
+            this.addSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
+            this.addSectionNumberComboBox.TabIndex = 7;
+            // 
+            // addSectionNameLabel
+            // 
+            this.addSectionNameLabel.AutoSize = true;
+            this.addSectionNameLabel.Location = new System.Drawing.Point(12, 116);
+            this.addSectionNameLabel.Name = "addSectionNameLabel";
+            this.addSectionNameLabel.Size = new System.Drawing.Size(29, 13);
+            this.addSectionNameLabel.TabIndex = 8;
+            this.addSectionNameLabel.Text = "label";
+            // 
+            // removeSectionNumberLabel
+            // 
+            this.removeSectionNumberLabel.AutoSize = true;
+            this.removeSectionNumberLabel.Location = new System.Drawing.Point(503, 96);
+            this.removeSectionNumberLabel.Name = "removeSectionNumberLabel";
+            this.removeSectionNumberLabel.Size = new System.Drawing.Size(35, 13);
+            this.removeSectionNumberLabel.TabIndex = 10;
+            this.removeSectionNumberLabel.Text = "label1";
+            // 
+            // removeSectionNumberComboBox
+            // 
+            this.removeSectionNumberComboBox.FormattingEnabled = true;
+            this.removeSectionNumberComboBox.Location = new System.Drawing.Point(595, 93);
+            this.removeSectionNumberComboBox.Name = "removeSectionNumberComboBox";
+            this.removeSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
+            this.removeSectionNumberComboBox.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 482);
+            this.ClientSize = new System.Drawing.Size(751, 527);
+            this.Controls.Add(this.removeSectionNumberComboBox);
+            this.Controls.Add(this.removeSectionNumberLabel);
             this.Controls.Add(this.addSectionNameLabel);
+            this.Controls.Add(this.addSectionNumberComboBox);
+            this.Controls.Add(this.addSectionNumberLabel);
             this.Controls.Add(this.addSectionNameTextbox);
             this.Controls.Add(this.section1);
             this.Controls.Add(this.removeSectionButton);
@@ -136,8 +178,12 @@
         private System.Windows.Forms.Button removeSectionButton;
         private System.Windows.Forms.Panel section1;
         private System.Windows.Forms.TextBox addSectionNameTextbox;
-        private System.Windows.Forms.Label addSectionNameLabel;
+        private System.Windows.Forms.Label addSectionNumberLabel;
         private System.Windows.Forms.Label sectionOneNameLabel;
+        private System.Windows.Forms.ComboBox addSectionNumberComboBox;
+        private System.Windows.Forms.Label addSectionNameLabel;
+        private System.Windows.Forms.Label removeSectionNumberLabel;
+        private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
     }
 }
 
