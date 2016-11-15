@@ -28,7 +28,7 @@ namespace HappyTech
         private void Form1_Load(object sender, EventArgs e)
         {
             //default text for labels,buttons on startup
-            sectionOneNameLabel.Text = "Section One";
+            //sectionOneNameLabel.Text = "Section One";
             positionLabel.Text = "Position";
             addSectionButton.Text = "Add New Section";
             addSectionNameLabel.Text = "Section Name:";
@@ -65,7 +65,12 @@ namespace HappyTech
             else
             {
 
-                //create textbox objects
+                //create objects
+                //panel objects
+                Panel sectionOne = new Panel();
+                //label objects
+                Label sectionOneNameLabel = new Label();
+                //textbox objects
                 TextBox textbox1 = new TextBox();
                 TextBox textbox2 = new TextBox();
                 TextBox textbox3 = new TextBox();
@@ -73,20 +78,27 @@ namespace HappyTech
                 TextBox textbox5 = new TextBox();
                 TextBox textbox6 = new TextBox();
 
-
+                //set positions
+                //position of panel in form
+                sectionOne.Location = new Point(10,130);
+                //position of label in panel
+                sectionOneNameLabel.Location = new Point(10, 25);
                 //position of textboxes in panel
-                textbox1.Location = new Point(10, 25 * count);
-                textbox2.Location = new Point(160, 25 * count);
-                textbox3.Location = new Point(10, 70 * count);
-                textbox4.Location = new Point(160, 70 * count);
-                textbox5.Location = new Point(10, 115 * count);
-                textbox6.Location = new Point(160, 115 * count);
+                textbox1.Location = new Point(10, 70 * count);
+                textbox2.Location = new Point(160, 70 * count);
+                textbox3.Location = new Point(10, 115 * count);
+                textbox4.Location = new Point(160, 115 * count);
+                textbox5.Location = new Point(10, 160 * count);
+                textbox6.Location = new Point(160, 160 * count);
 
+                //set size of panel
+                sectionOne.Size = new Size(460,180);
                 //change height and width of textboxes on right side
                 textbox2.Size = new Size(300, 24);
                 textbox4.Size = new Size(300, 24);
                 textbox6.Size = new Size(300, 24);
 
+                /*
                 //set name of each textbox
                 textbox1.Name = "textbox_" + (count + 1);
                 textbox2.Name = "textbox_" + (count + 1);
@@ -94,17 +106,24 @@ namespace HappyTech
                 textbox4.Name = "textbox_" + (count + 1);
                 textbox5.Name = "textbox_" + (count + 1);
                 textbox6.Name = "textbox_" + (count + 1);
+                */
 
-                //add textboxes to panel
-                section1.Controls.Add(textbox1);
-                section1.Controls.Add(textbox2);
-                section1.Controls.Add(textbox3);
-                section1.Controls.Add(textbox4);
-                section1.Controls.Add(textbox5);
-                section1.Controls.Add(textbox6);
+                //add panel to form
+                Controls.Add(sectionOne);
+
+                //add label to panel
+                sectionOne.Controls.Add(sectionOneNameLabel);
 
                 //rename section label with text entered into textbox
                 sectionOneNameLabel.Text = addSectionNameTextbox.Text;
+
+                //add textboxes to panel
+                sectionOne.Controls.Add(textbox1);
+                sectionOne.Controls.Add(textbox2);
+                sectionOne.Controls.Add(textbox3);
+                sectionOne.Controls.Add(textbox4);
+                sectionOne.Controls.Add(textbox5);
+                sectionOne.Controls.Add(textbox6);
             }
         }
     }
