@@ -60,18 +60,18 @@
             // 
             // addSectionButton
             // 
-            this.addSectionButton.Location = new System.Drawing.Point(40, 55);
+            this.addSectionButton.Location = new System.Drawing.Point(96, 47);
             this.addSectionButton.Name = "addSectionButton";
-            this.addSectionButton.Size = new System.Drawing.Size(75, 23);
+            this.addSectionButton.Size = new System.Drawing.Size(121, 29);
             this.addSectionButton.TabIndex = 2;
             this.addSectionButton.UseVisualStyleBackColor = true;
             this.addSectionButton.Click += new System.EventHandler(this.templateAddSectionButton_Click);
             // 
             // removeSectionButton
             // 
-            this.removeSectionButton.Location = new System.Drawing.Point(641, 49);
+            this.removeSectionButton.Location = new System.Drawing.Point(595, 47);
             this.removeSectionButton.Name = "removeSectionButton";
-            this.removeSectionButton.Size = new System.Drawing.Size(75, 35);
+            this.removeSectionButton.Size = new System.Drawing.Size(121, 29);
             this.removeSectionButton.TabIndex = 3;
             this.removeSectionButton.UseVisualStyleBackColor = true;
             // 
@@ -94,7 +94,7 @@
             // addSectionNumberComboBox
             // 
             this.addSectionNumberComboBox.FormattingEnabled = true;
-            this.addSectionNumberComboBox.Location = new System.Drawing.Point(117, 82);
+            this.addSectionNumberComboBox.Location = new System.Drawing.Point(96, 82);
             this.addSectionNumberComboBox.Name = "addSectionNumberComboBox";
             this.addSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
             this.addSectionNumberComboBox.TabIndex = 7;

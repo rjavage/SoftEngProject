@@ -126,9 +126,14 @@ namespace HappyTech
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
             //create object of new form
+            // we need to open the feedback form, not a new one, code below is what we need
+            //
+
             Form feedback = new Form();
+            
             feedback.Show(); //show new form 'feedback'
             this.Hide(); //hide form 'template'
+            
         }
     }
 }
