@@ -38,6 +38,7 @@
             this.addSectionNameLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
+            this.templateSaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // positionLabel
@@ -124,11 +125,22 @@
             this.removeSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
             this.removeSectionNumberComboBox.TabIndex = 11;
             // 
-            // Form1
+            // templateSaveButton
+            // 
+            this.templateSaveButton.Location = new System.Drawing.Point(641, 480);
+            this.templateSaveButton.Name = "templateSaveButton";
+            this.templateSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.templateSaveButton.TabIndex = 12;
+            this.templateSaveButton.Text = "button1";
+            this.templateSaveButton.UseVisualStyleBackColor = true;
+            this.templateSaveButton.Click += new System.EventHandler(this.templateSaveButton_Click);
+            // 
+            // template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 527);
+            this.Controls.Add(this.templateSaveButton);
             this.Controls.Add(this.removeSectionNumberComboBox);
             this.Controls.Add(this.removeSectionNumberLabel);
             this.Controls.Add(this.addSectionNameLabel);
@@ -139,7 +151,7 @@
             this.Controls.Add(this.addSectionButton);
             this.Controls.Add(this.templatePositionTextBox);
             this.Controls.Add(this.positionLabel);
-            this.Name = "Form1";
+            this.Name = "template";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -159,6 +171,7 @@
         private System.Windows.Forms.Label addSectionNameLabel;
         private System.Windows.Forms.Label removeSectionNumberLabel;
         private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
+        private System.Windows.Forms.Button templateSaveButton;
     }
 }
 

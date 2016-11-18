@@ -31,7 +31,7 @@ namespace HappyTech
             removeSectionButton.Text = "Remove Section";
             addSectionNumberLabel.Text = "Section Number:";
             removeSectionNumberLabel.Text = "Section Number:";
-
+            templateSaveButton.Text = "Save Form";
 
 
             //add values to addSectionNumberComboBox
@@ -121,6 +121,14 @@ namespace HappyTech
                 sectionOne.Controls.Add(textbox5);
                 sectionOne.Controls.Add(textbox6);
             }
+        }
+
+        private void templateSaveButton_Click(object sender, EventArgs e)
+        {
+            //create object of new form
+            Form feedback = new Form();
+            feedback.Show(); //show new form 'feedback'
+            this.Hide(); //hide form 'template'
         }
     }
 }

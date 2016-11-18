@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedback.Designer.cs">
+      <DependentUpon>feedback.cs</DependentUpon>
+    </Compile>
     <Compile Include="template.cs">
       <SubType>Form</SubType>
     </Compile>
