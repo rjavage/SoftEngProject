@@ -127,11 +127,11 @@ namespace HappyTech
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
             //create object of new form
-            // we need to open the feedback form, not a new one, code below is what we need
-            //paasingText is what we can call it for now
+            // we need to open the feedback form, not a new one -mt
+            //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
+            MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
             passingText = templatePositionTextBox.Text;
-            Form feedback = new Form();
-            feedback.Show(); //show new form 'feedback'
+            feedback; //show new form 'feedback'
             this.Hide(); //hide form 'template'
 
 

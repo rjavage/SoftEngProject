@@ -21,5 +21,25 @@ namespace HappyTech
         {
 
         }
+
+        private void templateInput_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void positionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailPreview_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

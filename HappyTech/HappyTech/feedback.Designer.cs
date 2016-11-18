@@ -47,6 +47,7 @@
             this.emailPreview.Name = "emailPreview";
             this.emailPreview.Size = new System.Drawing.Size(462, 461);
             this.emailPreview.TabIndex = 48;
+            this.emailPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.emailPreview_Paint);
             // 
             // templateInput
             // 
@@ -54,6 +55,7 @@
             this.templateInput.Name = "templateInput";
             this.templateInput.Size = new System.Drawing.Size(494, 461);
             this.templateInput.TabIndex = 47;
+            this.templateInput.Paint += new System.Windows.Forms.PaintEventHandler(this.templateInput_Paint);
             // 
             // positionLabel
             // 
@@ -63,6 +65,7 @@
             this.positionLabel.Size = new System.Drawing.Size(69, 13);
             this.positionLabel.TabIndex = 46;
             this.positionLabel.Text = "positionLabel";
+            this.positionLabel.Click += new System.EventHandler(this.positionLabel_Click);
             // 
             // button4
             // 
@@ -81,6 +84,7 @@
             this.button2.TabIndex = 44;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // emailTextbox
             // 
