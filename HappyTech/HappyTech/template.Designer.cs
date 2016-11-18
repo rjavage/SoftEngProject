@@ -1,6 +1,6 @@
 ﻿namespace HappyTech
 {
-    partial class Form1
+    partial class template
     {
         /// <summary>
         /// Required designer variable.

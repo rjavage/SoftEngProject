@@ -1,6 +1,6 @@
 ﻿// Author: Ryan Savage
 // SID: 1431802
-// Edited: 12/11/2016
+// Edited: 15/11/2016
 
 using System;
 using System.Collections.Generic;
@@ -14,13 +14,10 @@ using System.Windows.Forms;
 
 namespace HappyTech
 {
-    public partial class Form1 : Form
+    public partial class template : Form
     {
 
-        //count variable to keep track of textboxes
-        private int count = 1;
-
-        public Form1()
+        public template()
         {
             InitializeComponent();
         }
@@ -28,7 +25,6 @@ namespace HappyTech
         private void Form1_Load(object sender, EventArgs e)
         {
             //default text for labels,buttons on startup
-            //sectionOneNameLabel.Text = "Section One";
             positionLabel.Text = "Position";
             addSectionButton.Text = "Add New Section";
             addSectionNameLabel.Text = "Section Name:";
@@ -56,10 +52,10 @@ namespace HappyTech
 
         private void templateAddSectionButton_Click(object sender, EventArgs e)
         {
-            //validation - make sure section has a name
-            if (addSectionNameTextbox.Text == "")
+            //validation - make sure section has a name + number
+            if (addSectionNameTextbox.Text == "" || addSectionNumberComboBox.SelectedIndex == -1)
             {
-                MessageBox.Show("Please enter section name");
+                MessageBox.Show("Please make sure you have entered a section number and name"); //show messagebox to prompt user input for section number and name
             }
             //else create textboxes in panel
             else
@@ -84,12 +80,12 @@ namespace HappyTech
                 //position of label in panel
                 sectionOneNameLabel.Location = new Point(10, 25);
                 //position of textboxes in panel
-                textbox1.Location = new Point(10, 70 * count);
-                textbox2.Location = new Point(160, 70 * count);
-                textbox3.Location = new Point(10, 115 * count);
-                textbox4.Location = new Point(160, 115 * count);
-                textbox5.Location = new Point(10, 160 * count);
-                textbox6.Location = new Point(160, 160 * count);
+                textbox1.Location = new Point(10, 70);
+                textbox2.Location = new Point(160, 70);
+                textbox3.Location = new Point(10, 115);
+                textbox4.Location = new Point(160, 115);
+                textbox5.Location = new Point(10, 160);
+                textbox6.Location = new Point(160, 160);
 
                 //set size of panel
                 sectionOne.Size = new Size(460,180);
