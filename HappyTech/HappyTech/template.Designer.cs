@@ -131,7 +131,7 @@
             this.templateSaveButton.Name = "templateSaveButton";
             this.templateSaveButton.Size = new System.Drawing.Size(75, 23);
             this.templateSaveButton.TabIndex = 12;
-            this.templateSaveButton.Text = "button1";
+            this.templateSaveButton.Text = "Save Template";
             this.templateSaveButton.UseVisualStyleBackColor = true;
             this.templateSaveButton.Click += new System.EventHandler(this.templateSaveButton_Click);
             // 

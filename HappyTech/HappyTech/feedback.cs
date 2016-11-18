@@ -16,5 +16,10 @@ namespace HappyTech
         {
             InitializeComponent();
         }
+
+        private void feedback_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

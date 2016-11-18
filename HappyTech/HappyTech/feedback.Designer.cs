@@ -60,9 +60,9 @@
             this.positionLabel.AutoSize = true;
             this.positionLabel.Location = new System.Drawing.Point(110, 12);
             this.positionLabel.Name = "positionLabel";
-            this.positionLabel.Size = new System.Drawing.Size(35, 13);
+            this.positionLabel.Size = new System.Drawing.Size(69, 13);
             this.positionLabel.TabIndex = 46;
-            this.positionLabel.Text = "label1";
+            this.positionLabel.Text = "positionLabel";
             // 
             // button4
             // 
@@ -149,6 +149,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Name = "feedback";
             this.Text = "feedback";
+            this.Load += new System.EventHandler(this.feedback_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

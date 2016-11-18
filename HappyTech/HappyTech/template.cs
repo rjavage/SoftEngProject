@@ -16,8 +16,9 @@ namespace HappyTech
 {
     public partial class template : Form
     {
-
+        public static string passingText;
         public template()
+        
         {
             InitializeComponent();
         }
@@ -47,7 +48,7 @@ namespace HappyTech
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            positionLabel.Text = passingText; 
         }
 
         private void templateAddSectionButton_Click(object sender, EventArgs e)
@@ -127,13 +128,13 @@ namespace HappyTech
         {
             //create object of new form
             // we need to open the feedback form, not a new one, code below is what we need
-            //
-
+            //paasingText is what we can call it for now
+            passingText = templatePositionTextBox.Text;
             Form feedback = new Form();
-            
             feedback.Show(); //show new form 'feedback'
             this.Hide(); //hide form 'template'
-            
+
+
         }
     }
 }
