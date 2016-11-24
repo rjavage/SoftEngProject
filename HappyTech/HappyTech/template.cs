@@ -137,7 +137,7 @@ namespace HappyTech
             MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
             // passingText = templatePositionTextBox.Text;
             feedbackform fbF = new feedbackform();
-            fbF.Show(); //show new form 'feedback'
+            //fbF.Show(); //show new form 'feedback'
             this.Hide(); //hide form 'template'
 
         }
