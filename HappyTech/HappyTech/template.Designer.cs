@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.positionLabel = new System.Windows.Forms.Label();
             this.templatePositionTextBox = new System.Windows.Forms.TextBox();
             this.addSectionButton = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.removeSectionNumberLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
             this.templateSaveButton = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // positionLabel
@@ -135,6 +137,11 @@
             this.templateSaveButton.UseVisualStyleBackColor = true;
             this.templateSaveButton.Click += new System.EventHandler(this.templateSaveButton_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +179,7 @@
         private System.Windows.Forms.Label removeSectionNumberLabel;
         private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
         private System.Windows.Forms.Button templateSaveButton;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

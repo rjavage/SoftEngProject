@@ -15,8 +15,11 @@ using System.Windows.Forms;
 namespace HappyTech
 {
     public partial class template : Form
+    
     {
         public static string passingText;
+        
+        
         public template()
         
         {
@@ -126,14 +129,21 @@ namespace HappyTech
 
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
+
+            
             //create object of new form
             // we need to open the feedback form, not a new one -mt
             //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
             MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
-            passingText = templatePositionTextBox.Text;
-            feedback; //show new form 'feedback'
+            // passingText = templatePositionTextBox.Text;
+            feedbackform fbF = new feedbackform();
+            fbF.Show(); //show new form 'feedback'
             this.Hide(); //hide form 'template'
 
+        }
+
+        private class feedbackform
+        {
 
         }
     }
