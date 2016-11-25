@@ -31,5 +31,10 @@ namespace HappyTech
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
