@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.emailPreview = new System.Windows.Forms.Panel();
             this.templateInput = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,25 +38,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // emailPreview
-            // 
-            this.emailPreview.Location = new System.Drawing.Point(609, 150);
-            this.emailPreview.Name = "emailPreview";
-            this.emailPreview.Size = new System.Drawing.Size(462, 461);
-            this.emailPreview.TabIndex = 44;
             // 
             // templateInput
             // 
-            this.templateInput.Location = new System.Drawing.Point(31, 150);
+            this.templateInput.Location = new System.Drawing.Point(560, 126);
             this.templateInput.Name = "templateInput";
-            this.templateInput.Size = new System.Drawing.Size(494, 461);
+            this.templateInput.Size = new System.Drawing.Size(494, 552);
             this.templateInput.TabIndex = 43;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(770, 640);
+            this.button4.Location = new System.Drawing.Point(854, 722);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 42;
@@ -66,7 +60,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(955, 640);
+            this.button2.Location = new System.Drawing.Point(979, 722);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 41;
@@ -91,9 +85,9 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 714);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 776);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1167, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1123, 22);
             this.statusStrip1.TabIndex = 38;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -131,17 +125,36 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 48;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(124, 101);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 49;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 50;
+            this.label3.Text = "Template";
             // 
             // feebackform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 736);
+            this.ClientSize = new System.Drawing.Size(1123, 798);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTextbox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.emailPreview);
             this.Controls.Add(this.templateInput);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -157,8 +170,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel emailPreview;
         private System.Windows.Forms.Panel templateInput;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
@@ -169,5 +180,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

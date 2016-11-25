@@ -52,6 +52,7 @@ namespace HappyTech
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             positionLabel.Text = passingText; 
+
         }
 
         private void templateAddSectionButton_Click(object sender, EventArgs e)
