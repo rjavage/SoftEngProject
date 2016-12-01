@@ -82,6 +82,7 @@
             this.positionPassed.Name = "positionPassed";
             this.positionPassed.Size = new System.Drawing.Size(225, 20);
             this.positionPassed.TabIndex = 59;
+            this.positionPassed.TextChanged += new System.EventHandler(this.positionPassed_TextChanged);
             // 
             // label3
             // 
