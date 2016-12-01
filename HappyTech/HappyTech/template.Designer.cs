@@ -1,6 +1,6 @@
 ﻿namespace HappyTech
 {
-    partial class Form1
+    partial class template
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.positionLabel = new System.Windows.Forms.Label();
             this.templatePositionTextBox = new System.Windows.Forms.TextBox();
             this.addSectionButton = new System.Windows.Forms.Button();
             this.removeSectionButton = new System.Windows.Forms.Button();
-            this.section1 = new System.Windows.Forms.Panel();
-            this.sectionOneNameLabel = new System.Windows.Forms.Label();
             this.addSectionNameTextbox = new System.Windows.Forms.TextBox();
             this.addSectionNumberLabel = new System.Windows.Forms.Label();
             this.addSectionNumberComboBox = new System.Windows.Forms.ComboBox();
             this.addSectionNameLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
-            this.section1.SuspendLayout();
+            this.templateSaveButton = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // positionLabel
@@ -63,37 +63,20 @@
             // 
             // addSectionButton
             // 
-            this.addSectionButton.Location = new System.Drawing.Point(40, 55);
+            this.addSectionButton.Location = new System.Drawing.Point(96, 47);
             this.addSectionButton.Name = "addSectionButton";
-            this.addSectionButton.Size = new System.Drawing.Size(75, 23);
+            this.addSectionButton.Size = new System.Drawing.Size(121, 29);
             this.addSectionButton.TabIndex = 2;
             this.addSectionButton.UseVisualStyleBackColor = true;
             this.addSectionButton.Click += new System.EventHandler(this.templateAddSectionButton_Click);
             // 
             // removeSectionButton
             // 
-            this.removeSectionButton.Location = new System.Drawing.Point(641, 49);
+            this.removeSectionButton.Location = new System.Drawing.Point(595, 47);
             this.removeSectionButton.Name = "removeSectionButton";
-            this.removeSectionButton.Size = new System.Drawing.Size(75, 35);
+            this.removeSectionButton.Size = new System.Drawing.Size(121, 29);
             this.removeSectionButton.TabIndex = 3;
             this.removeSectionButton.UseVisualStyleBackColor = true;
-            // 
-            // section1
-            // 
-            this.section1.Controls.Add(this.sectionOneNameLabel);
-            this.section1.Location = new System.Drawing.Point(16, 175);
-            this.section1.Name = "section1";
-            this.section1.Size = new System.Drawing.Size(482, 164);
-            this.section1.TabIndex = 4;
-            // 
-            // sectionOneNameLabel
-            // 
-            this.sectionOneNameLabel.AutoSize = true;
-            this.sectionOneNameLabel.Location = new System.Drawing.Point(6, 4);
-            this.sectionOneNameLabel.Name = "sectionOneNameLabel";
-            this.sectionOneNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.sectionOneNameLabel.TabIndex = 0;
-            this.sectionOneNameLabel.Text = "label3";
             // 
             // addSectionNameTextbox
             // 
@@ -114,7 +97,7 @@
             // addSectionNumberComboBox
             // 
             this.addSectionNumberComboBox.FormattingEnabled = true;
-            this.addSectionNumberComboBox.Location = new System.Drawing.Point(117, 82);
+            this.addSectionNumberComboBox.Location = new System.Drawing.Point(96, 82);
             this.addSectionNumberComboBox.Name = "addSectionNumberComboBox";
             this.addSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
             this.addSectionNumberComboBox.TabIndex = 7;
@@ -145,27 +128,40 @@
             this.removeSectionNumberComboBox.Size = new System.Drawing.Size(121, 21);
             this.removeSectionNumberComboBox.TabIndex = 11;
             // 
-            // Form1
+            // templateSaveButton
+            // 
+            this.templateSaveButton.Location = new System.Drawing.Point(641, 480);
+            this.templateSaveButton.Name = "templateSaveButton";
+            this.templateSaveButton.Size = new System.Drawing.Size(75, 23);
+            this.templateSaveButton.TabIndex = 12;
+            this.templateSaveButton.Text = "Save Template";
+            this.templateSaveButton.UseVisualStyleBackColor = true;
+            this.templateSaveButton.Click += new System.EventHandler(this.templateSaveButton_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 527);
+            this.Controls.Add(this.templateSaveButton);
             this.Controls.Add(this.removeSectionNumberComboBox);
             this.Controls.Add(this.removeSectionNumberLabel);
             this.Controls.Add(this.addSectionNameLabel);
             this.Controls.Add(this.addSectionNumberComboBox);
             this.Controls.Add(this.addSectionNumberLabel);
             this.Controls.Add(this.addSectionNameTextbox);
-            this.Controls.Add(this.section1);
             this.Controls.Add(this.removeSectionButton);
             this.Controls.Add(this.addSectionButton);
             this.Controls.Add(this.templatePositionTextBox);
             this.Controls.Add(this.positionLabel);
-            this.Name = "Form1";
+            this.Name = "template";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.section1.ResumeLayout(false);
-            this.section1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,14 +173,14 @@
         private System.Windows.Forms.TextBox templatePositionTextBox;
         private System.Windows.Forms.Button addSectionButton;
         private System.Windows.Forms.Button removeSectionButton;
-        private System.Windows.Forms.Panel section1;
         private System.Windows.Forms.TextBox addSectionNameTextbox;
         private System.Windows.Forms.Label addSectionNumberLabel;
-        private System.Windows.Forms.Label sectionOneNameLabel;
         private System.Windows.Forms.ComboBox addSectionNumberComboBox;
         private System.Windows.Forms.Label addSectionNameLabel;
         private System.Windows.Forms.Label removeSectionNumberLabel;
         private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
+        private System.Windows.Forms.Button templateSaveButton;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
