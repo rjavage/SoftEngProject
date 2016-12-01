@@ -29,66 +29,27 @@
         private void InitializeComponent()
         {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.nameTextbox = new System.Windows.Forms.TextBox();
-            this.emailTextbox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.positionLabel = new System.Windows.Forms.Label();
-            this.templateInput = new System.Windows.Forms.Panel();
             this.emailPreview = new System.Windows.Forms.Panel();
+            this.positionPassed = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.nameTextbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.emailTextbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // statusStrip1
             // 
             this.statusStrip1.Location = new System.Drawing.Point(0, 665);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1113, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1149, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Position:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Email:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 46);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 13);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Applicant Name:";
-            // 
-            // nameTextbox
-            // 
-            this.nameTextbox.Location = new System.Drawing.Point(110, 43);
-            this.nameTextbox.Name = "nameTextbox";
-            this.nameTextbox.Size = new System.Drawing.Size(226, 20);
-            this.nameTextbox.TabIndex = 28;
-            // 
-            // emailTextbox
-            // 
-            this.emailTextbox.Location = new System.Drawing.Point(110, 71);
-            this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(226, 20);
-            this.emailTextbox.TabIndex = 29;
             // 
             // button2
             // 
@@ -108,46 +69,105 @@
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // positionLabel
-            // 
-            this.positionLabel.AutoSize = true;
-            this.positionLabel.Location = new System.Drawing.Point(110, 23);
-            this.positionLabel.Name = "positionLabel";
-            this.positionLabel.Size = new System.Drawing.Size(35, 13);
-            this.positionLabel.TabIndex = 35;
-            this.positionLabel.Text = "label1";
-            // 
-            // templateInput
-            // 
-            this.templateInput.Location = new System.Drawing.Point(30, 146);
-            this.templateInput.Name = "templateInput";
-            this.templateInput.Size = new System.Drawing.Size(494, 461);
-            this.templateInput.TabIndex = 36;
-            // 
             // emailPreview
             // 
-            this.emailPreview.Location = new System.Drawing.Point(608, 146);
+            this.emailPreview.Location = new System.Drawing.Point(132, 151);
             this.emailPreview.Name = "emailPreview";
             this.emailPreview.Size = new System.Drawing.Size(462, 461);
             this.emailPreview.TabIndex = 37;
             // 
-            // Form1
+            // positionPassed
+            // 
+            this.positionPassed.Location = new System.Drawing.Point(133, 24);
+            this.positionPassed.Name = "positionPassed";
+            this.positionPassed.Size = new System.Drawing.Size(225, 20);
+            this.positionPassed.TabIndex = 59;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 58;
+            this.label3.Text = "Template";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(132, 106);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 57;
+            // 
+            // nameTextbox
+            // 
+            this.nameTextbox.Location = new System.Drawing.Point(133, 51);
+            this.nameTextbox.Name = "nameTextbox";
+            this.nameTextbox.Size = new System.Drawing.Size(226, 20);
+            this.nameTextbox.TabIndex = 56;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(35, 54);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 13);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Applicant Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(35, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Position:";
+            // 
+            // emailTextbox
+            // 
+            this.emailTextbox.Location = new System.Drawing.Point(132, 80);
+            this.emailTextbox.Name = "emailTextbox";
+            this.emailTextbox.Size = new System.Drawing.Size(226, 20);
+            this.emailTextbox.TabIndex = 53;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(31, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 52;
+            this.label6.Text = "Email:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Location = new System.Drawing.Point(639, 151);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(462, 461);
+            this.panel1.TabIndex = 60;
+            // 
+            // ss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 687);
+            this.ClientSize = new System.Drawing.Size(1149, 687);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.positionPassed);
             this.Controls.Add(this.emailPreview);
-            this.Controls.Add(this.templateInput);
-            this.Controls.Add(this.positionLabel);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.nameTextbox);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.statusStrip1);
-            this.Name = "Form1";
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.emailTextbox);
+            this.Name = "ss";
             this.Text = "FeedbackForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -157,16 +177,18 @@
 
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox nameTextbox;
-        private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label positionLabel;
-        private System.Windows.Forms.Panel templateInput;
         private System.Windows.Forms.Panel emailPreview;
+        private System.Windows.Forms.TextBox positionPassed;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox nameTextbox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox emailTextbox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

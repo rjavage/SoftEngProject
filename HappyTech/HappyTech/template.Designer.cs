@@ -48,9 +48,9 @@
             this.positionLabel.AutoSize = true;
             this.positionLabel.Location = new System.Drawing.Point(13, 13);
             this.positionLabel.Name = "positionLabel";
-            this.positionLabel.Size = new System.Drawing.Size(35, 13);
+            this.positionLabel.Size = new System.Drawing.Size(47, 13);
             this.positionLabel.TabIndex = 0;
-            this.positionLabel.Text = "label1";
+            this.positionLabel.Text = "Position:";
             // 
             // templatePositionTextBox
             // 

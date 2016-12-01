@@ -37,9 +37,9 @@
             this.nameTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.positionPassed = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // templateInput
@@ -78,7 +78,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 78);
+            this.label6.Location = new System.Drawing.Point(23, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 39;
@@ -118,16 +118,6 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Position:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -145,14 +135,22 @@
             this.label3.TabIndex = 50;
             this.label3.Text = "Template";
             // 
+            // positionPassed
+            // 
+            this.positionPassed.Location = new System.Drawing.Point(125, 19);
+            this.positionPassed.Name = "positionPassed";
+            this.positionPassed.Size = new System.Drawing.Size(225, 20);
+            this.positionPassed.TabIndex = 51;
+            this.positionPassed.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // feebackform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1123, 770);
+            this.Controls.Add(this.positionPassed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTextbox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -180,8 +178,8 @@
         private System.Windows.Forms.TextBox nameTextbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox positionPassed;
     }
 }
