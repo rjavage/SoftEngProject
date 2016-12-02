@@ -51,7 +51,8 @@ namespace HappyTech
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            positionLabel.Text = passingText; 
+            //**coming back to this**positionLabel.Text = passingText; 
+
         }
 
         private void templateAddSectionButton_Click(object sender, EventArgs e)
@@ -130,21 +131,29 @@ namespace HappyTech
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
 
-            
+
             //create object of new form
             // we need to open the feedback form, not a new one -mt
             //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
+            feedbackform fbF = new feedbackform();
+            this.Hide();
+            feedback ss = new feedback();
+            ss.Show();
+
+
+
             MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
             // passingText = templatePositionTextBox.Text;
-            feedbackform fbF = new feedbackform();
-            fbF.Show(); //show new form 'feedback'
-            this.Hide(); //hide form 'template'
+               
+            
 
         }
 
         private class feedbackform
         {
+            private string text;
 
+          
         }
     }
 }

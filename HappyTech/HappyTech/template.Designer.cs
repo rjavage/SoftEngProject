@@ -50,7 +50,7 @@
             this.positionLabel.Name = "positionLabel";
             this.positionLabel.Size = new System.Drawing.Size(47, 13);
             this.positionLabel.TabIndex = 0;
-            this.positionLabel.Text = "label1";
+            this.positionLabel.Text = "Position:";
             // 
             // templatePositionTextBox
             // 
