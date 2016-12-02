@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.sendEmail = new System.Windows.Forms.Button();
+            this.saveFB = new System.Windows.Forms.Button();
             this.emailPreview = new System.Windows.Forms.Panel();
             this.positionPassed = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,23 +51,23 @@
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // button2
+            // sendEmail
             // 
-            this.button2.Location = new System.Drawing.Point(954, 636);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = true;
+            this.sendEmail.Location = new System.Drawing.Point(1026, 636);
+            this.sendEmail.Name = "sendEmail";
+            this.sendEmail.Size = new System.Drawing.Size(75, 23);
+            this.sendEmail.TabIndex = 30;
+            this.sendEmail.Text = "Send Email";
+            this.sendEmail.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // saveFB
             // 
-            this.button4.Location = new System.Drawing.Point(769, 636);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = true;
+            this.saveFB.Location = new System.Drawing.Point(905, 636);
+            this.saveFB.Name = "saveFB";
+            this.saveFB.Size = new System.Drawing.Size(75, 23);
+            this.saveFB.TabIndex = 31;
+            this.saveFB.Text = "Save";
+            this.saveFB.UseVisualStyleBackColor = true;
             // 
             // emailPreview
             // 
@@ -159,9 +159,9 @@
             this.Controls.Add(this.positionPassed);
             this.Controls.Add(this.emailPreview);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.saveFB);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.sendEmail);
             this.Controls.Add(this.nameTextbox);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label5);
@@ -178,8 +178,8 @@
 
         #endregion
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button sendEmail;
+        private System.Windows.Forms.Button saveFB;
         private System.Windows.Forms.Panel emailPreview;
         private System.Windows.Forms.TextBox positionPassed;
         private System.Windows.Forms.Label label3;

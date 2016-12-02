@@ -83,6 +83,7 @@
             this.addSectionNameTextbox.Name = "addSectionNameTextbox";
             this.addSectionNameTextbox.Size = new System.Drawing.Size(100, 20);
             this.addSectionNameTextbox.TabIndex = 5;
+            this.addSectionNameTextbox.TextChanged += new System.EventHandler(this.addSectionNameTextbox_TextChanged);
             // 
             // addSectionNumberLabel
             // 

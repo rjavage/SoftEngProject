@@ -36,5 +36,11 @@ namespace HappyTech
         {
             this.Hide();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //we need to pass the text input from here to the feedback form
+            //
+        }
     }
 }
