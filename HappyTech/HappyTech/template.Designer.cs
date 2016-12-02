@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.positionLabel = new System.Windows.Forms.Label();
-            this.templatePositionTextBox = new System.Windows.Forms.TextBox();
             this.addSectionButton = new System.Windows.Forms.Button();
             this.removeSectionButton = new System.Windows.Forms.Button();
             this.addSectionNameTextbox = new System.Windows.Forms.TextBox();
@@ -41,6 +40,7 @@
             this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
             this.templateSaveButton = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.textBoxPosition = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // positionLabel
@@ -51,14 +51,6 @@
             this.positionLabel.Size = new System.Drawing.Size(47, 13);
             this.positionLabel.TabIndex = 0;
             this.positionLabel.Text = "Position:";
-            // 
-            // templatePositionTextBox
-            // 
-            this.templatePositionTextBox.Location = new System.Drawing.Point(63, 10);
-            this.templatePositionTextBox.Name = "templatePositionTextBox";
-            this.templatePositionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.templatePositionTextBox.TabIndex = 1;
-            this.templatePositionTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // addSectionButton
             // 
@@ -143,11 +135,20 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // textBoxPosition
+            // 
+            this.textBoxPosition.Location = new System.Drawing.Point(96, 6);
+            this.textBoxPosition.Name = "textBoxPosition";
+            this.textBoxPosition.Size = new System.Drawing.Size(136, 20);
+            this.textBoxPosition.TabIndex = 13;
+            this.textBoxPosition.TextChanged += new System.EventHandler(this.position_TextChanged);
+            // 
             // template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 527);
+            this.Controls.Add(this.textBoxPosition);
             this.Controls.Add(this.templateSaveButton);
             this.Controls.Add(this.removeSectionNumberComboBox);
             this.Controls.Add(this.removeSectionNumberLabel);
@@ -157,7 +158,6 @@
             this.Controls.Add(this.addSectionNameTextbox);
             this.Controls.Add(this.removeSectionButton);
             this.Controls.Add(this.addSectionButton);
-            this.Controls.Add(this.templatePositionTextBox);
             this.Controls.Add(this.positionLabel);
             this.Name = "template";
             this.Text = "Form1";
@@ -170,7 +170,7 @@
         #endregion
 
         private System.Windows.Forms.Label positionLabel;
-        private System.Windows.Forms.TextBox templatePositionTextBox;
+    //    private System.Windows.Forms.TextBox PositionTextBox;
         private System.Windows.Forms.Button addSectionButton;
         private System.Windows.Forms.Button removeSectionButton;
         private System.Windows.Forms.TextBox addSectionNameTextbox;
@@ -181,6 +181,7 @@
         private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
         private System.Windows.Forms.Button templateSaveButton;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox textBoxPosition;
     }
 }
 

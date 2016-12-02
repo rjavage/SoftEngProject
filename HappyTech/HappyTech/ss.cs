@@ -12,9 +12,18 @@ namespace Template
 {
     public partial class ss : Form
     {
+        //Define variable
+        public string textBoxPosition { get; set; }
+
+
         public ss()
         {
             InitializeComponent();
+        }
+
+        public void SetData()
+        {
+            lblPosition.Text = textBoxPosition; //modifier(s)
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,7 +58,7 @@ namespace Template
 
         private void positionPassed_TextChanged(object sender, EventArgs e)
         {
-            //comment
+           
         }
 
         private void saveFB_Click(object sender, EventArgs e)

@@ -18,7 +18,9 @@ namespace HappyTech
     public partial class template : Form
     
     {
-        public static string passingText;
+        //defining variables/mods
+        
+
         
         
         public template()
@@ -27,6 +29,7 @@ namespace HappyTech
             InitializeComponent();
         }
 
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             //default text for labels,buttons on startup
@@ -137,19 +140,16 @@ namespace HappyTech
             //create object of new form
             // we need to open the feedback form, not a new one -mt
             //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
-            feedbackform fbF = new feedbackform();
-            this.Hide();
             feedback ss = new feedback();
+            ss.textBoxPosition = textBoxPosition.Text;
+            MessageBox.Show("Click 'Ok' to proceed to the Feedback form.");
+            ss.ShowDialog();
+            //list contructors
+            this.Hide();
             ss.Show();
-
-
-
-            MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
-            // passingText = templatePositionTextBox.Text;
-               
             
-
-        }
+            
+            }
 
         private class feedbackform
         {
@@ -159,6 +159,11 @@ namespace HappyTech
         }
 
         private void addSectionNameTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void position_TextChanged(object sender, EventArgs e)
         {
 
         }

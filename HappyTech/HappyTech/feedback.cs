@@ -12,6 +12,8 @@ namespace HappyTech
 {
     public partial class feedback : Form
     {
+        public string textBoxPosition { get; internal set; }
+
         public feedback()
         {
             InitializeComponent();
@@ -46,5 +48,7 @@ namespace HappyTech
         {
 
         }
+
+     
     }
 }

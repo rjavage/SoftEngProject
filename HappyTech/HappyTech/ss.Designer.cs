@@ -32,13 +32,13 @@
             this.sendEmail = new System.Windows.Forms.Button();
             this.saveFB = new System.Windows.Forms.Button();
             this.emailPreview = new System.Windows.Forms.Panel();
-            this.positionPassed = new System.Windows.Forms.TextBox();
             this.nameTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -75,14 +75,6 @@
             this.emailPreview.Size = new System.Drawing.Size(462, 461);
             this.emailPreview.TabIndex = 37;
             this.emailPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.emailPreview_Paint);
-            // 
-            // positionPassed
-            // 
-            this.positionPassed.Location = new System.Drawing.Point(133, 24);
-            this.positionPassed.Name = "positionPassed";
-            this.positionPassed.Size = new System.Drawing.Size(225, 20);
-            this.positionPassed.TabIndex = 59;
-            this.positionPassed.TextChanged += new System.EventHandler(this.positionPassed_TextChanged);
             // 
             // nameTextbox
             // 
@@ -134,13 +126,21 @@
             this.panel1.TabIndex = 60;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Location = new System.Drawing.Point(132, 27);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(0, 13);
+            this.lblPosition.TabIndex = 61;
+            // 
             // ss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 709);
+            this.Controls.Add(this.lblPosition);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.positionPassed);
             this.Controls.Add(this.emailPreview);
             this.Controls.Add(this.saveFB);
             this.Controls.Add(this.sendEmail);
@@ -163,13 +163,13 @@
         private System.Windows.Forms.Button sendEmail;
         private System.Windows.Forms.Button saveFB;
         private System.Windows.Forms.Panel emailPreview;
-        private System.Windows.Forms.TextBox positionPassed;
         private System.Windows.Forms.TextBox nameTextbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblPosition;
     }
 }
 
