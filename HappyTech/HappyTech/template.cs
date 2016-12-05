@@ -146,7 +146,7 @@ namespace HappyTech
             ss.ShowDialog();
             //list contructors
             this.Hide();
-            ss.Show();
+            ss.Show(); 
             
             
             }
