@@ -151,6 +151,8 @@ namespace HappyTech
             //create object of new form
             // we need to open the feedback form, not a new one -mt
             //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
+            //call to extract database first
+
             feedback ss = new feedback(this.position);
 
             ss.textBoxPosition = textBoxPosition.Text;
