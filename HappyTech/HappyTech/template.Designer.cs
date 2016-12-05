@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.positionLabel = new System.Windows.Forms.Label();
             this.addSectionButton = new System.Windows.Forms.Button();
             this.removeSectionButton = new System.Windows.Forms.Button();
@@ -39,7 +38,6 @@
             this.removeSectionNumberLabel = new System.Windows.Forms.Label();
             this.removeSectionNumberComboBox = new System.Windows.Forms.ComboBox();
             this.templateSaveButton = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBoxPosition = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -68,6 +66,7 @@
             this.removeSectionButton.Size = new System.Drawing.Size(121, 29);
             this.removeSectionButton.TabIndex = 3;
             this.removeSectionButton.UseVisualStyleBackColor = true;
+            this.removeSectionButton.Click += new System.EventHandler(this.removeSectionButton_Click);
             // 
             // addSectionNameTextbox
             // 
@@ -130,11 +129,6 @@
             this.templateSaveButton.UseVisualStyleBackColor = true;
             this.templateSaveButton.Click += new System.EventHandler(this.templateSaveButton_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // textBoxPosition
             // 
             this.textBoxPosition.Location = new System.Drawing.Point(96, 6);
@@ -147,6 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(751, 527);
             this.Controls.Add(this.textBoxPosition);
             this.Controls.Add(this.templateSaveButton);
@@ -180,7 +175,6 @@
         private System.Windows.Forms.Label removeSectionNumberLabel;
         private System.Windows.Forms.ComboBox removeSectionNumberComboBox;
         private System.Windows.Forms.Button templateSaveButton;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox textBoxPosition;
     }
 }

@@ -14,13 +14,19 @@ namespace HappyTech
     {
         public string textBoxPosition { get; internal set; }
 
-        public feedback()
+        private string position;
+
+        public feedback(string position)
         {
             InitializeComponent();
+            this.position = position;
+            positionLabel.Text = position;
+           // MessageBox.Show("Curent position is: "+ this.position);
         }
 
         private void feedback_Load(object sender, EventArgs e)
         {
+
 
         }
 
@@ -41,7 +47,7 @@ namespace HappyTech
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -49,6 +55,6 @@ namespace HappyTech
 
         }
 
-     
+
     }
 }

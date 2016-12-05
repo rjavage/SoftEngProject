@@ -19,8 +19,11 @@ namespace HappyTech
     
     {
         //defining variables/mods
-        
 
+        int section_counter = 0;
+        string position;
+        Control lastSection;
+        List<Control> sectionList = new List<Control>();
         
         
         public template()
@@ -56,7 +59,7 @@ namespace HappyTech
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //**coming back to this**positionLabel.Text = passingText; 
-
+            
 
         }
 
@@ -86,7 +89,7 @@ namespace HappyTech
 
                 //set positions
                 //position of panel in form
-                sectionOne.Location = new Point(10,130);
+                sectionOne.Location = new Point(10,130+170*section_counter); //sets the location of the new section based on the counter
                 //position of label in panel
                 sectionOneNameLabel.Location = new Point(10, 25);
                 //position of textboxes in panel
@@ -117,8 +120,15 @@ namespace HappyTech
                 //add panel to form
                 Controls.Add(sectionOne);
 
+                //doesnt work if you skip some index numbers
+                sectionList.Insert(addSectionNumberComboBox.SelectedIndex, sectionOne);
+
+                lastSection = sectionOne;
+                //MessageBox.Show("" + lastSectionIndex);
+
                 //add label to panel
                 sectionOne.Controls.Add(sectionOneNameLabel);
+               
 
                 //rename section label with text entered into textbox
                 sectionOneNameLabel.Text = addSectionNameTextbox.Text;
@@ -130,17 +140,19 @@ namespace HappyTech
                 sectionOne.Controls.Add(textbox4);
                 sectionOne.Controls.Add(textbox5);
                 sectionOne.Controls.Add(textbox6);
+                section_counter++;
             }
         }
 
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
-
+            this.position = textBoxPosition.Text;
 
             //create object of new form
             // we need to open the feedback form, not a new one -mt
             //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
-            feedback ss = new feedback();
+            feedback ss = new feedback(this.position);
+
             ss.textBoxPosition = textBoxPosition.Text;
             MessageBox.Show("Click 'Ok' to proceed to the Feedback form.");
             ss.ShowDialog();
@@ -165,6 +177,17 @@ namespace HappyTech
 
         private void position_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void removeSectionButton_Click(object sender, EventArgs e)
+        {
+            
+
+
+            //remove the section with selected index
+            Controls.Remove(sectionList[removeSectionNumberComboBox.SelectedIndex]);
+            this.Refresh();
 
         }
     }
