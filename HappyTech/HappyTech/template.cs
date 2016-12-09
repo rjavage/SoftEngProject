@@ -147,24 +147,15 @@ namespace HappyTech
 
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
-            this.position = textBoxPosition.Text;
-
-            //create object of new form
-            // we need to open the feedback form, not a new one -mt
-            //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
+            this.position = textBoxPosition.Text;  //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
             //call to extract to database first
-            feedback feedbackObj = new feedback(this.position);
+            feedback feedbackObj = new feedback(this.position); //create object of new form
+            feedbackObj.textBoxPosition = textBoxPosition.Text; //passing the text from the postion's text box to the feedback form
+            MessageBox.Show("Click 'Ok' to proceed to the Feedback form."); //message bow before proceeding to the feedback form
+            this.Hide(); // hiding the template
+            feedbackObj.ShowDialog(); // showing the feedback form
 
-
-            feedbackObj.textBoxPosition = textBoxPosition.Text;
-            MessageBox.Show("Click 'Ok' to proceed to the Feedback form.");
-            feedbackObj.ShowDialog();
-            //list contructors
-            this.Hide();
-          
-            
-            
-            }
+        }
 
         private class feedbackform
         {
