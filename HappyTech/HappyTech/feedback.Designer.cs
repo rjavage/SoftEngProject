@@ -75,6 +75,7 @@
             this.button4.TabIndex = 45;
             this.button4.Text = "Exit";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -99,6 +100,7 @@
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.Size = new System.Drawing.Size(226, 20);
             this.nameTextbox.TabIndex = 42;
+            this.nameTextbox.TextChanged += new System.EventHandler(this.nameTextbox_TextChanged);
             // 
             // label5
             // 
@@ -126,6 +128,7 @@
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 39;
             this.label2.Text = "Position:";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // statusStrip1
             // 

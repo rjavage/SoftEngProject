@@ -67,6 +67,7 @@
             this.button2.TabIndex = 41;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // emailTextbox
             // 
@@ -86,7 +87,7 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 748);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 711);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1123, 22);
             this.statusStrip1.TabIndex = 38;
@@ -125,6 +126,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 49;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -141,13 +143,13 @@
             this.positionPassed.Name = "positionPassed";
             this.positionPassed.Size = new System.Drawing.Size(225, 20);
             this.positionPassed.TabIndex = 51;
-            this.positionPassed.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.positionPassed.TextChanged += new System.EventHandler(this.positionPassed_TextChanged);
             // 
             // feebackform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 770);
+            this.ClientSize = new System.Drawing.Size(1123, 733);
             this.Controls.Add(this.positionPassed);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
