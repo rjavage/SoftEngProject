@@ -24,7 +24,7 @@ namespace HappyTech
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\github\HappyTech\HappyTech\HappyTechDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\finalSEP\HappyTech\HappyTech\HappyTechDatabase.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("Select count(*) From Login where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -43,15 +43,7 @@ namespace HappyTech
             }
         }
 
-       // private void button2_Click(object sender, EventArgs e)
-        
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void positionPassed_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

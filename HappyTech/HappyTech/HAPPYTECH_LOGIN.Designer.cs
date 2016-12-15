@@ -65,7 +65,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(31, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 32);
+            this.label3.Size = new System.Drawing.Size(89, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "LOGIN";
             // 
@@ -91,8 +91,10 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(313, 137);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(220, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button2
             // 
