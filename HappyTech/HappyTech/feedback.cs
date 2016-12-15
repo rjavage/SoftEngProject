@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
 
 namespace HappyTech
 {
@@ -44,12 +45,33 @@ namespace HappyTech
         {
 
         }
-
+        //click to send email
         private void button2_Click(object sender, EventArgs e)
         {
             //want to send the email from the text box, then close the form
+            try
+            {
 
-            this.Close();
+                SmtpClient client = new SmtpClient(emailTextbox.Text);
+                MailMessage message = new MailMessage();
+                message.From = new MailAddress(enterEmail.Text);
+                message.To.Add(enterEmail.Text);
+                message.Body = bodyTxt.Text;
+                message.Subject = subjectTxt.Text;
+                SmtpClient smtp = new SmtpClient();
+                smtp.Port = 587; 
+                smtp.Host = "smtp.mail.yahoo.com";
+                client.Credentials = new System.Net.NetworkCredential("happy_tech@yahoo.com", "1a2b3c4d");
+                client.EnableSsl = true;
+                client.Send(message);
+                    
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void label2_Click(object sender, EventArgs e)

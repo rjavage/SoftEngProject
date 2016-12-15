@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.emailPreview = new System.Windows.Forms.Panel();
-            this.TxtBody = new System.Windows.Forms.TextBox();
-            this.TxtSubject = new System.Windows.Forms.TextBox();
-            this.TxtRecievers = new System.Windows.Forms.TextBox();
-            this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.bodyTxt = new System.Windows.Forms.TextBox();
+            this.subjectTxt = new System.Windows.Forms.TextBox();
+            this.ccD = new System.Windows.Forms.TextBox();
+            this.enterEmail = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,10 +51,10 @@
             // 
             // emailPreview
             // 
-            this.emailPreview.Controls.Add(this.TxtBody);
-            this.emailPreview.Controls.Add(this.TxtSubject);
-            this.emailPreview.Controls.Add(this.TxtRecievers);
-            this.emailPreview.Controls.Add(this.txtEmailAddress);
+            this.emailPreview.Controls.Add(this.bodyTxt);
+            this.emailPreview.Controls.Add(this.subjectTxt);
+            this.emailPreview.Controls.Add(this.ccD);
+            this.emailPreview.Controls.Add(this.enterEmail);
             this.emailPreview.Controls.Add(this.label7);
             this.emailPreview.Controls.Add(this.label4);
             this.emailPreview.Controls.Add(this.label3);
@@ -65,34 +65,34 @@
             this.emailPreview.TabIndex = 48;
             this.emailPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.emailPreview_Paint);
             // 
-            // TxtBody
+            // bodyTxt
             // 
-            this.TxtBody.Location = new System.Drawing.Point(84, 216);
-            this.TxtBody.Multiline = true;
-            this.TxtBody.Name = "TxtBody";
-            this.TxtBody.Size = new System.Drawing.Size(326, 187);
-            this.TxtBody.TabIndex = 2;
+            this.bodyTxt.Location = new System.Drawing.Point(84, 216);
+            this.bodyTxt.Multiline = true;
+            this.bodyTxt.Name = "bodyTxt";
+            this.bodyTxt.Size = new System.Drawing.Size(326, 187);
+            this.bodyTxt.TabIndex = 2;
             // 
-            // TxtSubject
+            // subjectTxt
             // 
-            this.TxtSubject.Location = new System.Drawing.Point(84, 162);
-            this.TxtSubject.Name = "TxtSubject";
-            this.TxtSubject.Size = new System.Drawing.Size(326, 20);
-            this.TxtSubject.TabIndex = 2;
+            this.subjectTxt.Location = new System.Drawing.Point(84, 162);
+            this.subjectTxt.Name = "subjectTxt";
+            this.subjectTxt.Size = new System.Drawing.Size(326, 20);
+            this.subjectTxt.TabIndex = 2;
             // 
-            // TxtRecievers
+            // ccD
             // 
-            this.TxtRecievers.Location = new System.Drawing.Point(84, 119);
-            this.TxtRecievers.Name = "TxtRecievers";
-            this.TxtRecievers.Size = new System.Drawing.Size(326, 20);
-            this.TxtRecievers.TabIndex = 2;
+            this.ccD.Location = new System.Drawing.Point(84, 119);
+            this.ccD.Name = "ccD";
+            this.ccD.Size = new System.Drawing.Size(326, 20);
+            this.ccD.TabIndex = 2;
             // 
-            // txtEmailAddress
+            // enterEmail
             // 
-            this.txtEmailAddress.Location = new System.Drawing.Point(84, 65);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(326, 20);
-            this.txtEmailAddress.TabIndex = 2;
+            this.enterEmail.Location = new System.Drawing.Point(84, 65);
+            this.enterEmail.Name = "enterEmail";
+            this.enterEmail.Size = new System.Drawing.Size(326, 20);
+            this.enterEmail.TabIndex = 2;
             // 
             // label7
             // 
@@ -247,10 +247,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtBody;
-        private System.Windows.Forms.TextBox TxtSubject;
-        private System.Windows.Forms.TextBox TxtRecievers;
-        private System.Windows.Forms.TextBox txtEmailAddress;
+        private System.Windows.Forms.TextBox bodyTxt;
+        private System.Windows.Forms.TextBox subjectTxt;
+        private System.Windows.Forms.TextBox ccD;
+        private System.Windows.Forms.TextBox enterEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
