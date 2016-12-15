@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.emailPreview = new System.Windows.Forms.Panel();
+            this.TxtBody = new System.Windows.Forms.TextBox();
+            this.TxtSubject = new System.Windows.Forms.TextBox();
+            this.TxtRecievers = new System.Windows.Forms.TextBox();
+            this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.templateInput = new System.Windows.Forms.Panel();
             this.positionLabel = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.save2Database = new System.Windows.Forms.Button();
+            this.send2Email = new System.Windows.Forms.Button();
             this.emailTextbox = new System.Windows.Forms.TextBox();
             this.nameTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEmailAddress = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtRecievers = new System.Windows.Forms.TextBox();
-            this.TxtSubject = new System.Windows.Forms.TextBox();
-            this.TxtBody = new System.Windows.Forms.TextBox();
             this.emailPreview.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,71 @@
             this.emailPreview.TabIndex = 48;
             this.emailPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.emailPreview_Paint);
             // 
+            // TxtBody
+            // 
+            this.TxtBody.Location = new System.Drawing.Point(84, 216);
+            this.TxtBody.Multiline = true;
+            this.TxtBody.Name = "TxtBody";
+            this.TxtBody.Size = new System.Drawing.Size(326, 187);
+            this.TxtBody.TabIndex = 2;
+            // 
+            // TxtSubject
+            // 
+            this.TxtSubject.Location = new System.Drawing.Point(84, 162);
+            this.TxtSubject.Name = "TxtSubject";
+            this.TxtSubject.Size = new System.Drawing.Size(326, 20);
+            this.TxtSubject.TabIndex = 2;
+            // 
+            // TxtRecievers
+            // 
+            this.TxtRecievers.Location = new System.Drawing.Point(84, 119);
+            this.TxtRecievers.Name = "TxtRecievers";
+            this.TxtRecievers.Size = new System.Drawing.Size(326, 20);
+            this.TxtRecievers.TabIndex = 2;
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.Location = new System.Drawing.Point(84, 65);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(326, 20);
+            this.txtEmailAddress.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 216);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Body:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "CC:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Subject:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "To:";
+            // 
             // templateInput
             // 
             this.templateInput.Location = new System.Drawing.Point(30, 135);
@@ -83,25 +148,25 @@
             this.positionLabel.Text = "positionLabel";
             this.positionLabel.Click += new System.EventHandler(this.positionLabel_Click);
             // 
-            // button4
+            // save2Database
             // 
-            this.button4.Location = new System.Drawing.Point(412, 625);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 23);
-            this.button4.TabIndex = 45;
-            this.button4.Text = "Save to PDF";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.save2Database.Location = new System.Drawing.Point(412, 625);
+            this.save2Database.Name = "save2Database";
+            this.save2Database.Size = new System.Drawing.Size(112, 23);
+            this.save2Database.TabIndex = 45;
+            this.save2Database.Text = "Save";
+            this.save2Database.UseVisualStyleBackColor = true;
+            this.save2Database.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button2
+            // send2Email
             // 
-            this.button2.Location = new System.Drawing.Point(958, 625);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "Send Email";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.send2Email.Location = new System.Drawing.Point(958, 625);
+            this.send2Email.Name = "send2Email";
+            this.send2Email.Size = new System.Drawing.Size(112, 23);
+            this.send2Email.TabIndex = 44;
+            this.send2Email.Text = "Send Email";
+            this.send2Email.UseVisualStyleBackColor = true;
+            this.send2Email.Click += new System.EventHandler(this.button2_Click);
             // 
             // emailTextbox
             // 
@@ -145,71 +210,6 @@
             this.label2.Text = "Position:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "To:";
-            // 
-            // txtEmailAddress
-            // 
-            this.txtEmailAddress.Location = new System.Drawing.Point(84, 65);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(326, 20);
-            this.txtEmailAddress.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Subject:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "CC:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 216);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Body:";
-            // 
-            // TxtRecievers
-            // 
-            this.TxtRecievers.Location = new System.Drawing.Point(84, 119);
-            this.TxtRecievers.Name = "TxtRecievers";
-            this.TxtRecievers.Size = new System.Drawing.Size(326, 20);
-            this.TxtRecievers.TabIndex = 2;
-            // 
-            // TxtSubject
-            // 
-            this.TxtSubject.Location = new System.Drawing.Point(84, 162);
-            this.TxtSubject.Name = "TxtSubject";
-            this.TxtSubject.Size = new System.Drawing.Size(326, 20);
-            this.TxtSubject.TabIndex = 2;
-            // 
-            // TxtBody
-            // 
-            this.TxtBody.Location = new System.Drawing.Point(84, 216);
-            this.TxtBody.Multiline = true;
-            this.TxtBody.Name = "TxtBody";
-            this.TxtBody.Size = new System.Drawing.Size(326, 187);
-            this.TxtBody.TabIndex = 2;
-            // 
             // feedback
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,8 +218,8 @@
             this.Controls.Add(this.emailPreview);
             this.Controls.Add(this.templateInput);
             this.Controls.Add(this.positionLabel);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.save2Database);
+            this.Controls.Add(this.send2Email);
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.nameTextbox);
             this.Controls.Add(this.label5);
@@ -240,8 +240,8 @@
         private System.Windows.Forms.Panel emailPreview;
         private System.Windows.Forms.Panel templateInput;
         private System.Windows.Forms.Label positionLabel;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button save2Database;
+        private System.Windows.Forms.Button send2Email;
         private System.Windows.Forms.TextBox emailTextbox;
         private System.Windows.Forms.TextBox nameTextbox;
         private System.Windows.Forms.Label label5;

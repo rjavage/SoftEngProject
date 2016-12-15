@@ -24,7 +24,7 @@ namespace HappyTech
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GitHub\HappyTech\HappyTech\HappyTechDatabase.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\finalSEP\HappyTech\HappyTech\HappyTechDatabase.mdf;Integrated Security=True");
             SqlDataAdapter sda = new SqlDataAdapter("Select count(*) From Login where Username ='" + textBox1.Text + "' and Password ='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -41,6 +41,11 @@ namespace HappyTech
             {
                 MessageBox.Show("please check your Username and Password");
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

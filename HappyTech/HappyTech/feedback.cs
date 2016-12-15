@@ -57,7 +57,8 @@ namespace HappyTech
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            //want to save to database and close form
+            this.Close();
         }
     }
 }
