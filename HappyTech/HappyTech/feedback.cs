@@ -47,7 +47,9 @@ namespace HappyTech
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //want to send the email from the text box, then close the form
 
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -58,7 +60,7 @@ namespace HappyTech
         private void button4_Click(object sender, EventArgs e)
         {
             //want to save to database and close form
-            this.Close();
+            this.Close(); //closing the form
         }
     }
 }

@@ -132,9 +132,9 @@
             // 
             // templateInput
             // 
-            this.templateInput.Location = new System.Drawing.Point(30, 135);
+            this.templateInput.Location = new System.Drawing.Point(30, 128);
             this.templateInput.Name = "templateInput";
-            this.templateInput.Size = new System.Drawing.Size(494, 461);
+            this.templateInput.Size = new System.Drawing.Size(494, 466);
             this.templateInput.TabIndex = 47;
             this.templateInput.Paint += new System.Windows.Forms.PaintEventHandler(this.templateInput_Paint);
             // 
