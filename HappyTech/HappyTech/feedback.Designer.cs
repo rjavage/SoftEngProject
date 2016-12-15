@@ -38,12 +38,28 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtEmailAddress = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TxtRecievers = new System.Windows.Forms.TextBox();
+            this.TxtSubject = new System.Windows.Forms.TextBox();
+            this.TxtBody = new System.Windows.Forms.TextBox();
+            this.emailPreview.SuspendLayout();
             this.SuspendLayout();
             // 
             // emailPreview
             // 
-            this.emailPreview.Location = new System.Drawing.Point(608, 135);
+            this.emailPreview.Controls.Add(this.TxtBody);
+            this.emailPreview.Controls.Add(this.TxtSubject);
+            this.emailPreview.Controls.Add(this.TxtRecievers);
+            this.emailPreview.Controls.Add(this.txtEmailAddress);
+            this.emailPreview.Controls.Add(this.label7);
+            this.emailPreview.Controls.Add(this.label4);
+            this.emailPreview.Controls.Add(this.label3);
+            this.emailPreview.Controls.Add(this.label1);
+            this.emailPreview.Location = new System.Drawing.Point(608, 128);
             this.emailPreview.Name = "emailPreview";
             this.emailPreview.Size = new System.Drawing.Size(462, 461);
             this.emailPreview.TabIndex = 48;
@@ -69,21 +85,21 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(769, 625);
+            this.button4.Location = new System.Drawing.Point(412, 625);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 23);
             this.button4.TabIndex = 45;
-            this.button4.Text = "Exit";
+            this.button4.Text = "Save to PDF";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(954, 625);
+            this.button2.Location = new System.Drawing.Point(958, 625);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 23);
             this.button2.TabIndex = 44;
-            this.button2.Text = "Save";
+            this.button2.Text = "Send Email";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -100,7 +116,6 @@
             this.nameTextbox.Name = "nameTextbox";
             this.nameTextbox.Size = new System.Drawing.Size(226, 20);
             this.nameTextbox.TabIndex = 42;
-            this.nameTextbox.TextChanged += new System.EventHandler(this.nameTextbox_TextChanged);
             // 
             // label5
             // 
@@ -128,15 +143,72 @@
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 39;
             this.label2.Text = "Position:";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // statusStrip1
+            // label1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 692);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1110, 22);
-            this.statusStrip1.TabIndex = 38;
-            this.statusStrip1.Text = "statusStrip1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "To:";
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.Location = new System.Drawing.Point(84, 65);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(326, 20);
+            this.txtEmailAddress.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 165);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Subject:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(24, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "CC:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 216);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Body:";
+            // 
+            // TxtRecievers
+            // 
+            this.TxtRecievers.Location = new System.Drawing.Point(84, 119);
+            this.TxtRecievers.Name = "TxtRecievers";
+            this.TxtRecievers.Size = new System.Drawing.Size(326, 20);
+            this.TxtRecievers.TabIndex = 2;
+            // 
+            // TxtSubject
+            // 
+            this.TxtSubject.Location = new System.Drawing.Point(84, 162);
+            this.TxtSubject.Name = "TxtSubject";
+            this.TxtSubject.Size = new System.Drawing.Size(326, 20);
+            this.TxtSubject.TabIndex = 2;
+            // 
+            // TxtBody
+            // 
+            this.TxtBody.Location = new System.Drawing.Point(84, 216);
+            this.TxtBody.Multiline = true;
+            this.TxtBody.Name = "TxtBody";
+            this.TxtBody.Size = new System.Drawing.Size(326, 187);
+            this.TxtBody.TabIndex = 2;
             // 
             // feedback
             // 
@@ -153,10 +225,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.statusStrip1);
             this.Name = "feedback";
             this.Text = "feedback";
             this.Load += new System.EventHandler(this.feedback_Load);
+            this.emailPreview.ResumeLayout(false);
+            this.emailPreview.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +247,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.TextBox TxtBody;
+        private System.Windows.Forms.TextBox TxtSubject;
+        private System.Windows.Forms.TextBox TxtRecievers;
+        private System.Windows.Forms.TextBox txtEmailAddress;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
     }
 }

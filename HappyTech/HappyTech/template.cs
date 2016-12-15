@@ -11,13 +11,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace HappyTech
 {
     public partial class template : Form
     
     {
-        public static string passingText;
+        //defining variables/mods
+
+        int section_counter = 0;
+        string position;
+        Control lastSection;
+        List<Control> sectionList = new List<Control>();
         
         
         public template()
@@ -26,6 +33,7 @@ namespace HappyTech
             InitializeComponent();
         }
 
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             //default text for labels,buttons on startup
@@ -52,6 +60,7 @@ namespace HappyTech
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //**coming back to this**positionLabel.Text = passingText; 
+            
 
         }
 
@@ -81,7 +90,7 @@ namespace HappyTech
 
                 //set positions
                 //position of panel in form
-                sectionOne.Location = new Point(10,130);
+                sectionOne.Location = new Point(10,130+170*section_counter); //sets the location of the new section based on the counter
                 //position of label in panel
                 sectionOneNameLabel.Location = new Point(10, 25);
                 //position of textboxes in panel
@@ -112,8 +121,15 @@ namespace HappyTech
                 //add panel to form
                 Controls.Add(sectionOne);
 
+                //doesnt work if you skip some index numbers
+                sectionList.Insert(addSectionNumberComboBox.SelectedIndex, sectionOne);
+
+                lastSection = sectionOne;
+                //MessageBox.Show("" + lastSectionIndex);
+
                 //add label to panel
                 sectionOne.Controls.Add(sectionOneNameLabel);
+               
 
                 //rename section label with text entered into textbox
                 sectionOneNameLabel.Text = addSectionNameTextbox.Text;
@@ -125,27 +141,19 @@ namespace HappyTech
                 sectionOne.Controls.Add(textbox4);
                 sectionOne.Controls.Add(textbox5);
                 sectionOne.Controls.Add(textbox6);
+                section_counter++;
             }
         }
 
         private void templateSaveButton_Click(object sender, EventArgs e)
         {
-
-
-            //create object of new form
-            // we need to open the feedback form, not a new one -mt
-            //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
-            feedbackform fbF = new feedbackform();
-            this.Hide();
-            feedback ss = new feedback();
-            ss.Show();
-
-
-
-            MessageBox.Show("Template saved. Click 'Ok' to proceed to the Feedback form.");
-            // passingText = templatePositionTextBox.Text;
-               
-            
+            this.position = textBoxPosition.Text;  //passingText is what we can call it for now, this will hopefully pull all the input text to the feedback form
+            //call to extract to database first
+            feedback feedbackObj = new feedback(this.position); //create object of new form
+            feedbackObj.textBoxPosition = textBoxPosition.Text; //passing the text from the postion's text box to the feedback form
+            MessageBox.Show("Click 'Ok' to proceed to the Feedback form."); //message bow before proceeding to the feedback form
+            this.Hide(); // hiding the template
+            feedbackObj.ShowDialog(); // showing the feedback form
 
         }
 
@@ -154,6 +162,27 @@ namespace HappyTech
             private string text;
 
           
+        }
+
+        private void addSectionNameTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void position_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removeSectionButton_Click(object sender, EventArgs e)
+        {
+            
+
+
+            //remove the section with selected index
+            Controls.Remove(sectionList[removeSectionNumberComboBox.SelectedIndex]);
+            this.Refresh();
+
         }
     }
 }

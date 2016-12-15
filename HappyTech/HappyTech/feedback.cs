@@ -12,13 +12,21 @@ namespace HappyTech
 {
     public partial class feedback : Form
     {
-        public feedback()
+        public string textBoxPosition { get; internal set; }
+
+        private string position;
+
+        public feedback(string position)
         {
             InitializeComponent();
+            this.position = position;
+            positionLabel.Text = position;
+           // MessageBox.Show("Curent position is: "+ this.position);
         }
 
         private void feedback_Load(object sender, EventArgs e)
         {
+
 
         }
 
@@ -43,16 +51,6 @@ namespace HappyTech
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nameTextbox_TextChanged(object sender, EventArgs e)
         {
 
         }
